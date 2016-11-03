@@ -5,10 +5,12 @@
  */
 package labs;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  *
@@ -56,6 +58,12 @@ public class Lab2 {
        
         Movie m = (Movie)map.get("Spielberg");
         System.out.println(m);
+        
+        Set<String> keys = map.keySet();
+        for(String key : keys) {
+            Movie m1 = (Movie) map.get(key);
+            System.out.println(m1);
+        }
         
         
     }
