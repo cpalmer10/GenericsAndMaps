@@ -28,6 +28,7 @@ public class Lab3 {
         Movie michaelBay = new Movie("Transformers", "Bay", "TRNSFRM");
         Movie martinScorsese = new Movie("Shutter Island", "Scorsese", "SHTISL");
         Movie jamesCameron = new Movie("Avatar", "Cameron", "JCAVTR");
+        Movie stevenSpielberg1 = new Movie("E.T.","Spielberg", "SPIELET");
 
         map.put("Spielberg", stevenSpielberg);
         map.put("Bay", michaelBay);
