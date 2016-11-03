@@ -34,6 +34,7 @@ public class Lab3 {
         map.put("Bay", michaelBay);
         map.put("Scorsese",martinScorsese);
         map.put("Cameron", jamesCameron);
+        map.put("Spielberg", stevenSpielberg1);
         
         
         Map<String,Movie> map2 = new TreeMap<String,Movie>(map);
