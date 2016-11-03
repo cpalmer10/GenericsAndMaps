@@ -43,16 +43,20 @@ public class Lab2 {
 //       map.put("Bay", michaelBayMovies);
 //       map.put("Scorsese", scorseseMovies);
 //       map.put("Cameron", cameronMovies);
+        Movie stevenSpielberg = new Movie("E.T.","Spielberg", "SPIELET");
+        Movie michaelBay = new Movie("Transformers", "Bay", "TRNSFRM");
+        Movie martinScorsese = new Movie("Shutter Island", "Scorsese", "SHTISL");
+        Movie jamesCameron = new Movie("Avatar", "Cameron", "JCAVTR");
 
-
-        map.put("Spielberg", "E.T.");
-        map.put("Bay", "Transformers");
-        map.put("Scorsese","Good Fellas");
-        map.put("Bay", "Transformers");
+        map.put("Spielberg", stevenSpielberg);
+        map.put("Bay", michaelBay);
+        map.put("Scorsese",martinScorsese);
+        map.put("Cameron", jamesCameron);
         //map.put("Cameron", "Titanic");
        
-       List found = (List)map.get("Spielberg");
-        System.out.println(found);
+        Movie m = (Movie)map.get("Spielberg");
+        System.out.println(m);
+        
         
     }
    

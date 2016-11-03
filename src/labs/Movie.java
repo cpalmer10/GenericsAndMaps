@@ -18,9 +18,18 @@ public class Movie implements Comparable  {
     public Movie() {
     }
 
-    public Movie(String title, String director) {
+    public Movie(String title, String director, String id) {
         this.title = title;
         this.director = director;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
     
     
@@ -43,14 +52,17 @@ public class Movie implements Comparable  {
 
     @Override
     public String toString() {
-        return "Movie{" + "title=" + title + ", director=" + director + '}';
+        return  "Movie title - " + title + 
+                "\nDirector - " + director + 
+                "\nID - " + id;
     }
+
+    
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 41 * hash + Objects.hashCode(this.title);
-        hash = 41 * hash + Objects.hashCode(this.director);
+        int hash = 7;
+        hash = 83 * hash + Objects.hashCode(this.id);
         return hash;
     }
 
@@ -66,14 +78,13 @@ public class Movie implements Comparable  {
             return false;
         }
         final Movie other = (Movie) obj;
-        if (!Objects.equals(this.title, other.title)) {
-            return false;
-        }
-        if (!Objects.equals(this.director, other.director)) {
+        if (!Objects.equals(this.id, other.id)) {
             return false;
         }
         return true;
     }
+
+        
     @Override
     public int compareTo(Object o){
         Movie m = (Movie)o;
