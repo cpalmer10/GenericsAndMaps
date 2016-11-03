@@ -39,13 +39,16 @@ public class Lab3 {
         Set<String> keys2 = map2.keySet();
         for(String key : keys2) {
             Movie found = map.get(key);
-            System.out.println(found.toString());
+            //System.out.println(found.toString());
         }
         
         Collection<Movie> values = map2.values();
         List<Movie> sortedMovies = new ArrayList<Movie>(values);
         
-        Collections.sort(sortedMovies);        
+        Collections.sort(sortedMovies);
+        for(Movie movie : sortedMovies){
+            System.out.println(movie);
+        }
     }
     
 }
